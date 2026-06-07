@@ -34,11 +34,22 @@ header.mast{text-align:center;border-bottom:2px solid var(--ink);padding:18px 0 
 .item .rel a{color:var(--muted)}
 .foot{margin-top:34px;border-top:1px solid var(--rule);padding-top:10px;font-size:12px;color:var(--muted);text-align:center}
 .foot a{color:var(--muted)}
+.sitesearch{position:relative;max-width:560px;margin:10px auto 0}
+.sitesearch input{width:100%;box-sizing:border-box;font-family:Georgia,'Times New Roman',serif;font-size:14px;color:var(--ink);background:#fff;border:1px solid var(--rule);border-radius:5px;padding:8px 12px}
+.sitesearch input:focus{outline:none;border-color:var(--link);box-shadow:0 0 0 2px rgba(122,31,31,.12)}
+.sresults{display:none;position:absolute;left:0;right:0;top:calc(100% + 4px);background:#fff;border:1px solid var(--rule);border-radius:5px;box-shadow:0 6px 24px rgba(0,0,0,.12);max-height:62vh;overflow:auto;z-index:30;text-align:left}
+.sresults a{display:block;padding:8px 12px;border-bottom:1px solid var(--rule);color:var(--ink);font-size:13.5px;line-height:1.3}
+.sresults a:hover{background:#f6f2e9;text-decoration:none}
+.sresults a:last-child{border-bottom:0}
+.sresults .sec{display:inline-block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--link);border-radius:3px;padding:1px 5px;margin-right:6px;vertical-align:middle}
+.sresults small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.sresults .sempty{padding:10px 12px;color:var(--muted);font-size:13px}
 </style></head>
 <body><div class="wrap">
 <header class="mast"><h1>The Daily Brief</h1>
 <div class="motto">Markets · Macro · Technology · Ideas</div><div class="date">Sunday, June 7, 2026</div>
-<div class="nav"><a href='weekly.html'>Weekly · Themes &amp; Cross-Currents →</a> &nbsp;·&nbsp; <a href='podcasts.html'>Podcast Brief →</a> &nbsp;·&nbsp; <a href='letters.html'>Monthly · Fund-Manager Letters →</a></div></header>
+<div class="nav"><a href='weekly.html'>Weekly · Themes &amp; Cross-Currents →</a> &nbsp;·&nbsp; <a href='podcasts.html'>Podcast Brief →</a> &nbsp;·&nbsp; <a href='letters.html'>Monthly · Fund-Manager Letters →</a></div>
+<div class="sitesearch"><input id="sq" type="search" placeholder="Search the brief — podcasts, daily, weekly, letters…" autocomplete="off" aria-label="Search the site"><div id="sresults" class="sresults"></div></div></header>
 <div class='feature-row'><div class='feature'><div class='kicker'>Daily · Today's Signal</div><h2>Today's Signal</h2><p>**Defensive rotation in China markets**: Multiple sources highlight a shift from growth/tech to dividend-paying and old-economy sectors, with SSE Dividend (+3.67%) and mainland banks (HSMBI +2.04%) outperforming while tech stocks like SMIC (-7.29%) and WuXi AppTec (-4.45%) sold off (see <a class='cite' href='https://pandaperspectives.substack.com/p/china-weekly-wrap-like-the-story'>[1]</a>, <a class='cite' href='https://intelligentspeculations.substack.com/p/overview-63-feeding-the-ducks'>[11]</a>).</p><a class='readmore' href='features/2026-06-07.html'>Read today's brief »</a></div><div class='feature'><div class='kicker'>Weekly · Themes &amp; Cross-Currents · 2026-05-31 – 2026-06-07</div><h2>Themes &amp; Cross-Currents</h2><p>**AI-driven valuations face growing skepticism on fundamentals** — despite massive capital allocation (GOOG’s $80B raise, AMZN’s $200B plan, SpaceX IPO), multiple clusters question output efficiency (C7), speculative pricing (C10), and sustainability (C7, C14). Concerns span NVDA…</p><a class='readmore' href='weekly.html'>Read this week's brief »</a></div></div>
 <div class="cols">
   <div class="col"><h3>Notes &amp; Analysis</h3><p class='item'><span class='lead'>China Weekly Wrap: Like the Story, Not the Index Edition</span> <span class='src'>· Panda Perspectives</span><br>The week saw a significant rotation out of growth and tech stocks into dividend-paying and old-economy sectors in China, with the CSI 300, ChiNext, and SSE Composite all declining. Key actio… <a class='more' href='https://pandaperspectives.substack.com/p/china-weekly-wrap-like-the-story'>more »</a><span class='rel'>↳ earlier: <a href='https://pandaperspectives.substack.com/p/china-weekly-wrap-hardware-re-rate'>Panda Perspectives, 2026-05-31</a></span></p>
@@ -85,18 +96,45 @@ header.mast{text-align:center;border-bottom:2px solid var(--ink);padding:18px 0 
 <p class='item'><span class='lead'>Uncommon Knowledge</span> <span class='src'>· May 29</span><br>Five More Questions with Stephen Kotkin: Can America Still Lead The World? — Stephen Kotkin answers five more questions on Iran, China, Ukraine, and A… <a class='more' href='https://www.youtube.com/watch?v=gBEdxb8ei_0'>listen »</a></p>
 <p class='item'><span class='lead'>Invest Like the Best</span> <span class='src'>· Jun 03</span><br>Uber CEO on AI, Autonomous Vehicles, and the Future of Transportation — Dara Khosrowshahi, CEO of Uber, joins Invest Like the Best to discuss Uber’s n… <a class='more' href='https://www.youtube.com/watch?v=ThMtheE5eO0'>listen »</a></p>
 <p class='item'><span class='lead'>The Meb Faber Show</span> <span class='src'>· Jun 05</span><br>Most Investors Will Never Beat The Market — My guest today is Charles Ellis, founder of Greenwich Associates, longtime member of Yale’s investment com… <a class='more' href='https://www.youtube.com/watch?v=3CpKtm50Uvc'>listen »</a></p></div>
-  <div class="col"><h3>Books</h3><p class='item'><span class='lead'>The Psychology of Money: Timeless lessons on wealth, greed, and happiness</span><span class='src'></span><br> <a class='more' href='https://www.amazon.com/Psychology-Money-Timeless-lessons-happiness/dp/B0GQCJVVY6/ref=zg_bs_g_2604_d_sccl_1/142-9371523-6970454'>more »</a></p>
-<p class='item'><span class='lead'>Market Wizards: The Next Generation: The World’s Top Young Traders Reveal How They Beat the Market</span><span class='src'></span><br> <a class='more' href='https://www.amazon.com/dp/B0H422VMHM/ref=zg_bs_g_2604_d_sccl_2/142-9371523-6970454'>more »</a></p>
-<p class='item'><span class='lead'>I Will Teach You to Be Rich: No Guilt. No Excuses. Just a 6-Week Program That Works (Second Edition)</span><span class='src'> — Ramit Sethi</span><br> <a class='more' href='https://www.amazon.com/Will-Teach-You-Rich-Second/dp/1523505745/ref=zg_bs_g_2604_d_sccl_3/142-9371523-6970454'>more »</a></p>
-<p class='item'><span class='lead'>The Simple Path to Wealth: Your Road Map to Financial Independence and a Rich, Free Life</span><span class='src'></span><br> <a class='more' href='https://www.amazon.com/The-Simple-Path-to-Wealth-audiobook/dp/B0725RFDPY/ref=zg_bs_g_2604_d_sccl_4/142-9371523-6970454'>more »</a></p>
-<p class='item'><span class='lead'>How to Rule the World: An Education in Power at Stanford University</span><span class='src'> — Theo Baker</span><br> <a class='more' href='https://www.amazon.com/How-Rule-World-Education-University/dp/0593832833/ref=zg_bs_g_2604_d_sccl_5/142-9371523-6970454'>more »</a></p>
-<p class='item'><span class='lead'>The Millionaire Next Door: The Surprising Secrets of America&#x27;s Wealthy</span><span class='src'> — Thomas J. Stanley Ph.D.</span><br> <a class='more' href='https://www.amazon.com/Millionaire-Next-Door-Surprising-Americas/dp/1589795474/ref=zg_bs_g_2604_d_sccl_6/142-9371523-6970454'>more »</a></p>
-<p class='item'><span class='lead'>The Richest Man in Babylon - The Original 1926 Classic (Reader&#x27;s Library Classics)</span><span class='src'> — George S. Clason</span><br> <a class='more' href='https://www.amazon.com/Richest-Man-Babylon-Original-Classics/dp/1954839499/ref=zg_bs_g_2604_d_sccl_7/142-9371523-6970454'>more »</a></p>
-<p class='item'><span class='lead'>Good to Great: Why Some Companies Make the Leap...And Others Don&#x27;t</span><span class='src'></span><br> <a class='more' href='https://www.amazon.com/Good-to-Great-Jim-Collins-audiobook/dp/B003VXI5MS/ref=zg_bs_g_2604_d_sccl_8/142-9371523-6970454'>more »</a></p>
-<p class='item'><span class='lead'>2029: The End of America : Why the Age of Paper Money Is Ending And How to Survive the Coming Global Monetary Reset</span><span class='src'> — Porter Stansberry</span><br> <a class='more' href='https://www.amazon.com/2029-America-Ending-Survive-Monetary-ebook/dp/B0GX2XFX4V/ref=zg_bs_g_2604_d_sccl_9/142-9371523-6970454'>more »</a></p>
-<p class='item'><span class='lead'>Risk and Reward: How to handle market volatility and build long-term wealth</span><span class='src'> — Ben Carlson</span><br> <a class='more' href='https://www.amazon.com/Risk-Reward-handle-volatility-long-term/dp/1804093262/ref=zg_bs_g_2604_d_sccl_10/142-9371523-6970454'>more »</a></p>
-<p class='item'><span class='lead'>The Little Book of Common Sense Investing: The Only Way to Guarantee Your Fair Share of Stock Market Returns</span><span class='src'> — John C. Bogle</span><br> <a class='more' href='https://www.amazon.com/Little-Book-Common-Sense-Investing/dp/1119404509/ref=zg_bs_g_2604_d_sccl_11/142-9371523-6970454'>more »</a></p>
-<p class='item'><span class='lead'>Zero to One: Notes on Startups, or How to Build the Future</span><span class='src'> — Peter Thiel</span><br> <a class='more' href='https://www.amazon.com/Zero-One-Notes-Startups-Future-ebook/dp/B00J6YBOFQ/ref=zg_bs_g_2604_d_sccl_12/142-9371523-6970454'>more »</a></p></div>
+  <div class="col"><h3>Books</h3><p class='item'><span class='lead'>The Psychology of Money: Timeless lessons on wealth, greed, and happiness</span><span class='src'></span><br> <a class='more' href='https://www.amazon.com/Psychology-Money-Timeless-lessons-happiness/dp/B0GQCJVVY6/ref=zg_bs_g_2604_d_sccl_1/144-7014860-7336127'>more »</a></p>
+<p class='item'><span class='lead'>Market Wizards: The Next Generation: The World’s Top Young Traders Reveal How They Beat the Market</span><span class='src'></span><br> <a class='more' href='https://www.amazon.com/Market-Wizards-Generation-Worlds-Traders/dp/B0H422VMHM/ref=zg_bs_g_2604_d_sccl_2/144-7014860-7336127'>more »</a></p>
+<p class='item'><span class='lead'>The Simple Path to Wealth: Your Road Map to Financial Independence and a Rich, Free Life</span><span class='src'></span><br> <a class='more' href='https://www.amazon.com/The-Simple-Path-to-Wealth-audiobook/dp/B0725RFDPY/ref=zg_bs_g_2604_d_sccl_3/144-7014860-7336127'>more »</a></p>
+<p class='item'><span class='lead'>I Will Teach You to Be Rich: No Guilt. No Excuses. Just a 6-Week Program That Works (Second Edition)</span><span class='src'> — Ramit Sethi</span><br> <a class='more' href='https://www.amazon.com/Will-Teach-You-Rich-Second/dp/1523505745/ref=zg_bs_g_2604_d_sccl_4/144-7014860-7336127'>more »</a></p>
+<p class='item'><span class='lead'>The Millionaire Next Door: The Surprising Secrets of America&#x27;s Wealthy</span><span class='src'> — Thomas J. Stanley Ph.D.</span><br> <a class='more' href='https://www.amazon.com/Millionaire-Next-Door-Surprising-Americas/dp/1589795474/ref=zg_bs_g_2604_d_sccl_5/144-7014860-7336127'>more »</a></p>
+<p class='item'><span class='lead'>The Richest Man in Babylon - The Original 1926 Classic (Reader&#x27;s Library Classics)</span><span class='src'> — George S. Clason</span><br> <a class='more' href='https://www.amazon.com/Richest-Man-Babylon-Original-Classics/dp/1954839499/ref=zg_bs_g_2604_d_sccl_6/144-7014860-7336127'>more »</a></p>
+<p class='item'><span class='lead'>How to Rule the World: An Education in Power at Stanford University</span><span class='src'> — Theo Baker</span><br> <a class='more' href='https://www.amazon.com/How-Rule-World-Education-University/dp/0593832833/ref=zg_bs_g_2604_d_sccl_7/144-7014860-7336127'>more »</a></p>
+<p class='item'><span class='lead'>Good to Great: Why Some Companies Make the Leap...And Others Don&#x27;t</span><span class='src'></span><br> <a class='more' href='https://www.amazon.com/Good-to-Great-Jim-Collins-audiobook/dp/B003VXI5MS/ref=zg_bs_g_2604_d_sccl_8/144-7014860-7336127'>more »</a></p>
+<p class='item'><span class='lead'>2029: The End of America : Why the Age of Paper Money Is Ending And How to Survive the Coming Global Monetary Reset</span><span class='src'> — Porter Stansberry</span><br> <a class='more' href='https://www.amazon.com/2029-America-Ending-Survive-Monetary-ebook/dp/B0GX2XFX4V/ref=zg_bs_g_2604_d_sccl_9/144-7014860-7336127'>more »</a></p>
+<p class='item'><span class='lead'>The Little Book of Common Sense Investing: The Only Way to Guarantee Your Fair Share of Stock Market Returns</span><span class='src'> — John C. Bogle</span><br> <a class='more' href='https://www.amazon.com/Little-Book-Common-Sense-Investing/dp/1119404509/ref=zg_bs_g_2604_d_sccl_10/144-7014860-7336127'>more »</a></p>
+<p class='item'><span class='lead'>Risk and Reward: How to handle market volatility and build long-term wealth</span><span class='src'> — Ben Carlson</span><br> <a class='more' href='https://www.amazon.com/Risk-Reward-handle-volatility-long-term/dp/1804093262/ref=zg_bs_g_2604_d_sccl_11/144-7014860-7336127'>more »</a></p>
+<p class='item'><span class='lead'>Zero to One: Notes on Startups, or How to Build the Future</span><span class='src'> — Peter Thiel</span><br> <a class='more' href='https://www.amazon.com/Zero-One-Notes-Startups-Future-ebook/dp/B00J6YBOFQ/ref=zg_bs_g_2604_d_sccl_12/144-7014860-7336127'>more »</a></p></div>
 </div>
 <div class="foot">Past daily briefs: <a href='features/2026-06-07.html'>2026-06-07</a> · <a href='features/2026-06-06.html'>2026-06-06</a> · <a href='features/2026-06-05.html'>2026-06-05</a> · <a href='features/2026-06-04.html'>2026-06-04</a> · <a href='features/2026-06-03.html'>2026-06-03</a> · <a href='features/2026-06-02.html'>2026-06-02</a> · <a href='features/2026-06-01.html'>2026-06-01</a> · <a href='features/2026-05-31.html'>2026-05-31</a><br>Past weekly briefs: <a href='weekly/2026-06-07.html'>2026-06-07</a> · <a href='weekly/2026-06-01.html'>2026-06-01</a><br>generated by blogmonitor<br>Not investment advice. General market commentary and meta-summary of third-party sources, for informational purposes only.</div>
-</div></body></html>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7/dist/fuse.min.js"></script>
+<script>
+(function(){
+  var input=document.getElementById('sq'), box=document.getElementById('sresults');
+  if(!input||typeof fetch==='undefined') return;
+  var fuse=null;
+  fetch('search-index.json').then(function(r){return r.json();}).then(function(data){
+    if(typeof Fuse==='undefined') return;
+    fuse=new Fuse(data,{includeScore:false,threshold:0.4,ignoreLocation:true,minMatchCharLength:2,
+      keys:[{name:'title',weight:3},{name:'section',weight:1},{name:'text',weight:1}]});
+  }).catch(function(){});
+  function esc(s){return (s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function snip(e,q){var t=e.text||'';var i=t.toLowerCase().indexOf(q.toLowerCase());i=i<0?0:Math.max(0,i-40);return t.substr(i,150);}
+  function render(){
+    var q=input.value.trim();
+    if(!q||!fuse){box.style.display='none';box.innerHTML='';return;}
+    var res=fuse.search(q).slice(0,12);
+    if(!res.length){box.innerHTML='<div class="sempty">No matches.</div>';box.style.display='block';return;}
+    box.innerHTML=res.map(function(r){var e=r.item;return '<a href="'+esc(e.url)+'"><span class="sec">'+esc(e.section)+'</span>'+esc(e.title)+'<small>…'+esc(snip(e,q))+'…</small></a>';}).join('');
+    box.style.display='block';
+  }
+  input.addEventListener('input',render);
+  input.addEventListener('focus',function(){if(box.innerHTML)box.style.display='block';});
+  document.addEventListener('click',function(ev){if(!input.contains(ev.target)&&!box.contains(ev.target))box.style.display='none';});
+})();
+</script>
+</body></html>
