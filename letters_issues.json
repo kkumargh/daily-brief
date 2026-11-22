@@ -1,5 +1,11 @@
 [
  {
+  "date": "2026-11-22",
+  "count": 22,
+  "href": "letters/2026-11-22.html",
+  "label": "Nov 22, 2026"
+ },
+ {
   "date": "2026-11-15",
   "count": 68,
   "href": "letters/2026-11-15.html",
@@ -19,7 +25,7 @@
  },
  {
   "date": "earlier",
-  "count": 172,
+  "count": 240,
   "href": "letters/earlier.html",
   "label": "Earlier letters (archive)"
  }
